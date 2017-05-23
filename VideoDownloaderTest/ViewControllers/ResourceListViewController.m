@@ -35,13 +35,19 @@
     
     
     
-    _downLoadBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    _downLoadBtn = [UIButton new];
     [_downLoadBtn addTarget:self action:@selector(downLoadAction) forControlEvents:UIControlEventTouchUpInside];
-    [_downLoadBtn setTitle:@"download" forState:UIControlStateNormal];
-    [_downLoadBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     _downLoadBtn.frame = CGRectMake((self.view.bounds.size.width - 100)/2, 150, 100, 50);
+    [_downLoadBtn setBackgroundImage:[self imageWithColor:[UIColor orangeColor]] forState:UIControlStateNormal];
+    [_downLoadBtn setTitle:NSLocalizedString(@"download", nil) forState:UIControlStateNormal];
+    _downLoadBtn.titleLabel.textColor = [UIColor whiteColor];
+    _downLoadBtn.titleLabel.font = [UIFont fontWithName:@".SFUIText-Medium" size:17];
+    _downLoadBtn.layer.cornerRadius = 4;
+    _downLoadBtn.clipsToBounds = YES;
     [self.view addSubview:_downLoadBtn];
-    _downLoadBtn.backgroundColor = [UIColor grayColor];
+
+    
     
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"loading" style:UIBarButtonItemStyleDone target:self action:@selector(goManage)];
@@ -53,11 +59,30 @@
     
 }
 
+-(UIImage*)imageWithColor:(UIColor*)color
+{
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    _textView.text = [UIPasteboard generalPasteboard].string;
+    _textView.text = @"";
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        _textView.text = [UIPasteboard generalPasteboard].string;
+    });
+    
 }
 
 

@@ -9,8 +9,7 @@
 #import "LoadedViewController.h"
 #import "LYFDownloadManager.h"
 #import "XCFileManager.h"
-#import "avplayerVC.h"
-#import "VideoPlayController.h"
+#import "ERPlayer.h"
 @interface LoadedViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataArray;
@@ -22,7 +21,7 @@
     [super viewDidLoad];
     
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 30, self.view.bounds.size.width, self.view.bounds.size.height - 30) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 64) style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
@@ -61,14 +60,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *path = _dataArray[indexPath.row];
-//    avplayerVC *vc = [avplayerVC new];
-//    vc.playurl = path;
-//    [self presentViewController:vc animated:NO completion:nil];
+    ERPlayer *player = [ERPlayer new];
+    player.frame = CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.width / 16 * 9  + 40);
     
-    
-    VideoPlayController *videoVC = [[VideoPlayController alloc] init];
-    videoVC.playurl = path;
-    [self presentViewController:videoVC animated:YES completion:nil];
+    [player setViedoUrl:[NSURL fileURLWithPath:path]];
+    [self.view addSubview:player];
+
 }
 
 @end

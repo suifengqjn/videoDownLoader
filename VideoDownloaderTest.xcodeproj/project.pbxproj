@@ -9,14 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D3367411EA50B7D002025F6 /* LoadedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3367401EA50B7D002025F6 /* LoadedViewController.m */; };
 		1D3367441EA50FC4002025F6 /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3367431EA50FC4002025F6 /* XCFileManager.m */; };
-		1D3367551EA512BD002025F6 /* avplayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3367471EA512BD002025F6 /* avplayerVC.m */; };
-		1D3367561EA512BD002025F6 /* TBloaderURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D33674A1EA512BD002025F6 /* TBloaderURLConnection.m */; };
-		1D3367571EA512BD002025F6 /* TBPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D33674B1EA512BD002025F6 /* TBPlayer.bundle */; };
-		1D3367581EA512BD002025F6 /* TBPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D33674D1EA512BD002025F6 /* TBPlayer.m */; };
-		1D3367591EA512BD002025F6 /* TBVideoRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D33674F1EA512BD002025F6 /* TBVideoRequestTask.m */; };
-		1D33675A1EA512BD002025F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3367521EA512BD002025F6 /* MBProgressHUD.m */; };
-		1D33675B1EA512BD002025F6 /* XCHudHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3367541EA512BD002025F6 /* XCHudHelper.m */; };
-		1D33675E1EA522E8002025F6 /* VideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D33675D1EA522E8002025F6 /* VideoPlayController.m */; };
+		1D7146EA1ED4998C0043F59D /* ERPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7146E81ED4998C0043F59D /* ERPlayer.m */; };
+		1D7146EB1ED4998C0043F59D /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D7146E91ED4998C0043F59D /* Resources.bundle */; };
 		2A3C796B1E648C01003AADE0 /* NSData+LYFCorrectResumeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C796A1E648C01003AADE0 /* NSData+LYFCorrectResumeData.m */; };
 		2A7005441D7C273300DDCFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7005431D7C273300DDCFC4 /* main.m */; };
 		2A7005471D7C273300DDCFC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7005461D7C273300DDCFC4 /* AppDelegate.m */; };
@@ -41,21 +35,9 @@
 		1D3367401EA50B7D002025F6 /* LoadedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadedViewController.m; sourceTree = "<group>"; };
 		1D3367421EA50FC4002025F6 /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileManager.h; sourceTree = "<group>"; };
 		1D3367431EA50FC4002025F6 /* XCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileManager.m; sourceTree = "<group>"; };
-		1D3367461EA512BD002025F6 /* avplayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avplayerVC.h; sourceTree = "<group>"; };
-		1D3367471EA512BD002025F6 /* avplayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = avplayerVC.m; sourceTree = "<group>"; };
-		1D3367491EA512BD002025F6 /* TBloaderURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBloaderURLConnection.h; sourceTree = "<group>"; };
-		1D33674A1EA512BD002025F6 /* TBloaderURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBloaderURLConnection.m; sourceTree = "<group>"; };
-		1D33674B1EA512BD002025F6 /* TBPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TBPlayer.bundle; sourceTree = "<group>"; };
-		1D33674C1EA512BD002025F6 /* TBPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPlayer.h; sourceTree = "<group>"; };
-		1D33674D1EA512BD002025F6 /* TBPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPlayer.m; sourceTree = "<group>"; };
-		1D33674E1EA512BD002025F6 /* TBVideoRequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVideoRequestTask.h; sourceTree = "<group>"; };
-		1D33674F1EA512BD002025F6 /* TBVideoRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVideoRequestTask.m; sourceTree = "<group>"; };
-		1D3367511EA512BD002025F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		1D3367521EA512BD002025F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		1D3367531EA512BD002025F6 /* XCHudHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCHudHelper.h; sourceTree = "<group>"; };
-		1D3367541EA512BD002025F6 /* XCHudHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCHudHelper.m; sourceTree = "<group>"; };
-		1D33675C1EA522E8002025F6 /* VideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayController.h; sourceTree = "<group>"; };
-		1D33675D1EA522E8002025F6 /* VideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayController.m; sourceTree = "<group>"; };
+		1D7146E71ED4998C0043F59D /* ERPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERPlayer.h; sourceTree = "<group>"; };
+		1D7146E81ED4998C0043F59D /* ERPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERPlayer.m; sourceTree = "<group>"; };
+		1D7146E91ED4998C0043F59D /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		2A3C79691E648C01003AADE0 /* NSData+LYFCorrectResumeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LYFCorrectResumeData.h"; sourceTree = "<group>"; };
 		2A3C796A1E648C01003AADE0 /* NSData+LYFCorrectResumeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LYFCorrectResumeData.m"; sourceTree = "<group>"; };
 		2A70053F1D7C273300DDCFC4 /* VideoDownloaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDownloaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,42 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D3367451EA51260002025F6 /* player */ = {
+		1D7146E61ED4998C0043F59D /* ERPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				1D3367461EA512BD002025F6 /* avplayerVC.h */,
-				1D3367471EA512BD002025F6 /* avplayerVC.m */,
-				1D33675C1EA522E8002025F6 /* VideoPlayController.h */,
-				1D33675D1EA522E8002025F6 /* VideoPlayController.m */,
-				1D3367481EA512BD002025F6 /* Classes */,
+				1D7146E71ED4998C0043F59D /* ERPlayer.h */,
+				1D7146E81ED4998C0043F59D /* ERPlayer.m */,
+				1D7146E91ED4998C0043F59D /* Resources.bundle */,
 			);
-			path = player;
-			sourceTree = "<group>";
-		};
-		1D3367481EA512BD002025F6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1D3367491EA512BD002025F6 /* TBloaderURLConnection.h */,
-				1D33674A1EA512BD002025F6 /* TBloaderURLConnection.m */,
-				1D33674B1EA512BD002025F6 /* TBPlayer.bundle */,
-				1D33674C1EA512BD002025F6 /* TBPlayer.h */,
-				1D33674D1EA512BD002025F6 /* TBPlayer.m */,
-				1D33674E1EA512BD002025F6 /* TBVideoRequestTask.h */,
-				1D33674F1EA512BD002025F6 /* TBVideoRequestTask.m */,
-				1D3367501EA512BD002025F6 /* XCToast */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		1D3367501EA512BD002025F6 /* XCToast */ = {
-			isa = PBXGroup;
-			children = (
-				1D3367511EA512BD002025F6 /* MBProgressHUD.h */,
-				1D3367521EA512BD002025F6 /* MBProgressHUD.m */,
-				1D3367531EA512BD002025F6 /* XCHudHelper.h */,
-				1D3367541EA512BD002025F6 /* XCHudHelper.m */,
-			);
-			path = XCToast;
+			path = ERPlayer;
 			sourceTree = "<group>";
 		};
 		2A7005361D7C273300DDCFC4 = {
@@ -155,7 +109,7 @@
 		2A7005411D7C273300DDCFC4 /* VideoDownloaderTest */ = {
 			isa = PBXGroup;
 			children = (
-				1D3367451EA51260002025F6 /* player */,
+				1D7146E61ED4998C0043F59D /* ERPlayer */,
 				2ADE74E61E681A1F004A5A8A /* ViewControllers */,
 				2ADE74EB1E681A1F004A5A8A /* Views */,
 				2AA5EB581E3C9B540041177F /* Downloader */,
@@ -289,7 +243,7 @@
 			files = (
 				2A7005551D7C273300DDCFC4 /* LaunchScreen.storyboard in Resources */,
 				2ADE74F71E681A1F004A5A8A /* DownloadManageCell.xib in Resources */,
-				1D3367571EA512BD002025F6 /* TBPlayer.bundle in Resources */,
+				1D7146EB1ED4998C0043F59D /* Resources.bundle in Resources */,
 				2ADE74F51E681A1F004A5A8A /* DownloadCell.xib in Resources */,
 				2A7005521D7C273300DDCFC4 /* Assets.xcassets in Resources */,
 				2A70054D1D7C273300DDCFC4 /* Main.storyboard in Resources */,
@@ -305,17 +259,10 @@
 			files = (
 				2ADE74F21E681A1F004A5A8A /* DownloadMamageViewController.m in Sources */,
 				2A3C796B1E648C01003AADE0 /* NSData+LYFCorrectResumeData.m in Sources */,
-				1D3367561EA512BD002025F6 /* TBloaderURLConnection.m in Sources */,
 				1D3367441EA50FC4002025F6 /* XCFileManager.m in Sources */,
 				2ADE74F61E681A1F004A5A8A /* DownloadManageCell.m in Sources */,
-				1D33675E1EA522E8002025F6 /* VideoPlayController.m in Sources */,
 				1D3367411EA50B7D002025F6 /* LoadedViewController.m in Sources */,
-				1D3367591EA512BD002025F6 /* TBVideoRequestTask.m in Sources */,
-				1D33675A1EA512BD002025F6 /* MBProgressHUD.m in Sources */,
-				1D33675B1EA512BD002025F6 /* XCHudHelper.m in Sources */,
 				2AA5EB601E3C9B540041177F /* LYFDownloadInstance.m in Sources */,
-				1D3367551EA512BD002025F6 /* avplayerVC.m in Sources */,
-				1D3367581EA512BD002025F6 /* TBPlayer.m in Sources */,
 				2AA5EB5F1E3C9B540041177F /* LYFDownloadTaskModel.m in Sources */,
 				2ADE74F31E681A1F004A5A8A /* ResourceListViewController.m in Sources */,
 				2A7005501D7C273300DDCFC4 /* VideoDownloaderTest.xcdatamodeld in Sources */,
@@ -324,6 +271,7 @@
 				2A7005441D7C273300DDCFC4 /* main.m in Sources */,
 				2AA5EB611E3C9B540041177F /* LYFDownloadManager.m in Sources */,
 				2ADE74F41E681A1F004A5A8A /* DownloadCell.m in Sources */,
+				1D7146EA1ED4998C0043F59D /* ERPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
